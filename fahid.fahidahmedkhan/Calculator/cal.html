@@ -1,0 +1,40 @@
+<html>  
+   <head>
+  <title>calculator based on javascript.</title>
+    </head>
+  <form name="board" id="board">  
+     <input type="text"  id="resultsbox" style="text-align:center;background:white;" disabled="disabled">  
+    </form>  
+      
+    <table>  
+ 
+     <tr>  
+      <td><input type="button" value="7" onclick="board.resultsbox.value += '7'"></td>  
+      <td><input type="button" value="8" onclick="board.resultsbox.value += '8'"></td>  
+      <td><input type="button" value="9" onclick="board.resultsbox.value += '9'"></td>  
+      <td rowspan="2"><input type="button" onclick="board.resultsbox.value += '+'" style="height: 60px;" value ="+"></td>  
+     </tr>  
+     <tr>  
+      <td><input type="button" value="4" onclick="board.resultsbox.value += '4'"></td>  
+      <td><input type="button" value="5" onclick="board.resultsbox.value += '5'"></td>  
+      <td><input type="button" value="6" onclick="board.resultsbox.value += '6'"></td>  
+     </tr>  
+     <tr>  
+      <td><input type="button" value="1" onclick="board.resultsbox.value += '1'"></td>  
+      <td><input type="button" value="2" onclick="board.resultsbox.value += '2'"></td>  
+      <td><input type="button" value="3" onclick="board.resultsbox.value += '3'"></td>  
+      <td rowspan="3">
+      <input type="button" onclick="board.resultsbox.value = eval(board.resultsbox.value)" style="height: 80px;" value ="="></td>  
+     </tr>  
+     <tr>  
+      <td><input type="button"   value="0" onclick="board.resultsbox.value += '0'"></td>  
+      <td><input type="button" value="."  style="width: 100%" onclick="board.resultsbox.value += '.' "></td>  
+      <td><input type="button" value="-"   onclick="board.resultsbox.value += '-'" ></td> 
+     </tr>  
+         <tr>  
+      <td><input type="button" value="C"   onclick="board.resultsbox.value = ''"></td>  
+      <td><input type="button" value="/"   onclick="board.resultsbox.value += '/'"></td>  
+      <td><input type="button" value="x"   onclick="board.resultsbox.value += 'x'"></td>  
+ 
+     </tr>  
+    </table>  

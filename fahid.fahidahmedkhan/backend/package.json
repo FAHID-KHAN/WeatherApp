@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+"scripts": {
+     "start": "node src/index.js",
+     "dev": "./node_modules/.bin/nodemon -w src src/index.js",
+     "lint:es": "eslint --no-ignore src",
+     "test": "yarn run lint:es",
+     "test:watch": "./node_modules/.bin/nodemon --exec 'yarn test'"
+},
+  "dependencies": {
+    "kcors": "^2.2.2",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}

@@ -1,0 +1,19 @@
+.nav-item {
+  font-style: Helvetica;
+}
+.navbar-nav {
+  background-color: darkslategray;
+  border-radius: 40px;
+}
+:hover navbar-item {
+  width: 60%;
+}
+
+.bg-white {
+  position: relative;
+  bottom: 35px;
+}
+.media {
+  position: relative;
+  top: 50px;
+}
